@@ -1,0 +1,37 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+    margin: auto;
+}
+.square {
+    border: 1px solid black;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 45px;
+}
+#status {
+    text-align: center;
+    font-size: 32px;
+}
+#form-pop {
+    margin: 100px auto;
+    width: 500px;
+    height: 200px;
+    z-index: 2;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: green;
+}
+.form-input {
+    width: 100%;
+}
+#button-holder {
+    display: none;
+   text-align: center;
+}
+#replay {
+    font-size: 32px;
+    padding: 25px;
+}

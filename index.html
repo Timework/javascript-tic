@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/793d8924a3.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="form-pop">
+        <form onsubmit="Game.start(); return false">
+            <label for="player1">First players name</label>
+            <input type="text" id="player1" class="form-input" name="player1" required>
+            <label for="player2">Second players name</label>
+            <input type="text" id="player2" class="form-input" name="player2" required>
+            <button type="submit">Play game</button>
+        </form>
+        </div>
+        <p id="status"></p>
+        <div id="board"></div>
+        <div id="button-holder">
+        <button id="replay" onclick="Game.replay();">Replay?</button>
+        </div>
+    </body>
+
+</html>
